@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- 
+        method
+        get or post
+        GET:
+        short form
+        insensetive info
+        read
+
+        Post:
+        long form
+        sensetive info
+        crate update delete
+
+        action
+
+        name value pair
+        eg: 
+        studentName = "Aslam"
+
+        submit button
+
+
+     -->
+
+
+    <h1>Forms</h1>
+
+    <form>
+        <label>
+            Student Name: <input type="text" name="studnt-name" size="35" maxlength="5" />
+        </label>
+        <br /><br />
+        <label>
+            Password: <input type="password" name="password" />
+        </label>
+        <br /><br />
+        Gender:
+        <label>
+            Male <input type="radio" name="gender" value="male" />
+        </label>
+        <label>
+            Female <input type="radio" name="gender" value="female" checked />
+        </label>
+        <br /><br />
+
+        <p>
+            What subject do you want to enrolled in?
+        </p>
+
+        <label>
+            Web & Mobile <input type="checkbox" name="subject" value="web & mobile" checked />
+        </label>
+        <label>
+            Generative AI <input type="checkbox" name="subject" value="generative AI" />
+        </label>
+        <label>
+            Blockchain <input type="checkbox" name="subject" value="blockchain" checked />
+        </label>
+        <br /><br />
+        <label>
+            Plase upload passport size picture:
+            <input type="file" name="picture" />
+        </label>
+
+        <br /><br />
+
+
+
+        <label>
+            <p>Please write something about yourself:</p>
+            <textarea name="intro"></textarea>
+        </label>
+        <br /><br />
+
+        <select name="days">
+            <option value="">Select classes days</option>
+            <option value="Monday & Turesday">Monday & Tuesday</option>
+            <option value="Wednesday & Thursday">Wednesday & Thursday</option>
+            <option value="Friday & Saturday" selected>Friday & Saturday</option>
+        </select>
+
+        <select name="time-slots" multiple>
+            <option value="">Select any time slot</option>
+            <option value="Morning">Morning</option>
+            <option value="After Noon" selected>After Noon</option>
+            <option value="Evening">Evening</option>
+
+
+
+        </select>
+
+
+        <br /><br />
+
+        <label for="revenue">
+            <p>What is your monthly income?</p>
+        </label>
+
+        <p>Note: Do not worry, we will not share this information with anyone, it is only for our system
+            processing.</p>
+
+
+        <input type="text" name="income" id="revenue" />
+
+
+
+
+
+        <br /><br />
+
+        <input type="hidden" name="campus" value="bahadurabad" />
+
+        <br /><br />
+
+
+        <input type="email" />
+        <br /><br />
+        <input type="url" />
+        <br /><br />
+        <input type="search" />
+        <br /><br />
+        <input type="date" />
+        <br /><br />
+        <input type="month" />
+        <br /><br />
+        <input type="time" />
+        <br /><br />
+        <input type="number" />
+        <br /><br />
+        <input type="range" />
+        <br /><br />
+        <input type="week" />
+        <br /><br />
+        <input type="color" />
+
+
+
+        <br /><br />
+
+        <!-- <input type="submit" value="Add Student Info" /> -->
+
+        <input type="image" src="images/subscribe.avif" width="200" height="125" />
+
+        <br /><br />
+
+    </form>
+    <br /><br /> <br /><br /> <br /><br /> <br /><br />
+
+
+
+
+
+    <button>
+        Click Me!
+        <img src="images/568182.png" alt="bell icon" width="16" height="16" />
+    </button>
+
+
+
+
+
+    <br /><br /> <br /><br /> <br /><br /> <br /><br />
+
+
+
+
+
+
+
+    <form>
+        <fieldset>
+            <legend>For Office Use Only</legend>
+
+            <label for="user-name">
+                User Name:
+            </label>
+
+            <input type="text" name="user-name" id="user-name" />
+
+            <br /><br />
+
+            <label>
+                Password: <input type="password" name="password" />
+            </label>
+            <br /><br />
+        </fieldset>
+
+
+        <br /><br />
+
+        <input type="submit" value="register" />
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br /><br /> <br /><br /> <br /><br /> <br /><br />
+
+</body>
+
+</html>
