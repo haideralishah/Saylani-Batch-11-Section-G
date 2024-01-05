@@ -1,0 +1,41 @@
+/* body {
+    background-color: lightcyan;
+}
+
+h1 {
+    color: purple;
+}
+
+p {
+    color: green;
+}
+ */
+
+h1 {
+    color: yellow !important;
+}
+
+h1 {
+    color: orange;
+}
+
+* {
+    background-color: aqua;
+    color: purple;
+}
+
+
+
+
+.even {
+    color: blue;
+}
+
+.even {
+    color: red;
+}
+
+
+#special {
+    text-decoration: underline;
+}
