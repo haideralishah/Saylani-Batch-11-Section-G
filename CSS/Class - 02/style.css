@@ -1,0 +1,39 @@
+* {
+    background-color: antiquewhite;
+}
+
+h1,
+p {
+    color: brown;
+}
+
+#js-1 {
+    /* text-decoration: underline;  */
+    font-weight: bold;
+}
+
+.special {
+    /* color: white; */
+}
+
+h1.special {
+    /* background-color: aqua; */
+}
+
+
+
+div>ul>li>a {
+    color: red;
+}
+
+div a {
+    background-color: aquamarine;
+}
+
+
+div,
+h1 {}
+
+div>h1 {}
+
+div h1 {}

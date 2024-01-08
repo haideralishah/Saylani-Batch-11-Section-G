@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Courier New", monospace;
+}
+
+i {
+    color: green;
+}
+
+i {
+    color: red;
+}
+
+
+
+b {
+    color: pink;
+}
+
+p b {
+    color: blue !important;
+}
+
+p b {
+    color: purple;
+}
+
+p#intro {
+    font-size: 100%;
+}
+
+p {
+    font-size: 75%;
+}
