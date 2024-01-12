@@ -1,0 +1,18 @@
+.container {
+    color: red;
+    background-color: aqua;
+    border: 10px solid green;
+    padding: 15px;
+}
+
+h1,
+p {
+    /* border: inherit; */
+    background-color: pink;
+    padding: inherit;
+}
+
+
+h1 {
+    color: black;
+}

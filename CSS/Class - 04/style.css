@@ -1,0 +1,64 @@
+/* 
+selector{
+    declaration;
+    property: value;
+}
+
+*
+
+h1, p
+
+.className
+
+#idName
+
+
+parent>child
+
+parent child
+
+*/
+
+
+/* 
+    color
+    background-color
+    text-decoration
+    font-family
+    font-size
+    font-weight
+    text-align
+    width
+    height
+    text-transform
+
+
+
+*/
+
+
+
+* {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    /* background-color: pink;
+    width: 40%; */
+    font-size: 80px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 45px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 550px;
+}
+
+
