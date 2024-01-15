@@ -1,0 +1,48 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 40px; */
+    background-color: pink;
+    /* width: 70%; */
+}
+
+
+h1 {
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-size: 32px; */
+    background-color: aliceblue;
+    width: 35%;
+    /* font-size: 1em; */
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: underline;
+    /* letter-spacing: 1.2em; */
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    /* font-size: 20px; */
+    /* font-size: 25%; */
+    /* font-size: 1em; */
+    text-transform: capitalize;
+    line-height: 1.2em;
+    /* word-spacing: 1.4em; */
+    text-align: justify;
+}
+
+.diff-size {
+    color: red;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* 
+cite {
+    font-style: normal;
+} */
+
+a {
+    color: red;
+    text-decoration: none;
+}

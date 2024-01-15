@@ -3,10 +3,12 @@
 }
 
 h1 {
-    color: #ff0000;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* color: #ff0000;
+    background-color: rgba(0, 0, 0, 0.5); */
     /* background-color: #000000; */
     /* opacity: 0.6; */
+    color: hsl(320, 100%, 50%);
+
 }
 
 p {
