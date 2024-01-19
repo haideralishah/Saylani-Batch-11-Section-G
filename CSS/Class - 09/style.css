@@ -1,0 +1,66 @@
+.container {
+    background-color: pink;
+    height: 250px;
+}
+
+h1,
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+h1 {
+    width: 50%;
+}
+
+p {
+    height: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    /* border: 10px solid red; */
+    border-width: 10px 0 0 0;
+    border-style: solid double dotted dashed;
+    border-color: red green blue yellow;
+}

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "alex brush";
+    src: url("fonts/AlexBrush-Regular.ttf");
+}
+
+@font-face {
+    font-family: "kaushan";
+    src: url("fonts/KaushanScript-Regular.otf");
+}
+
+* {
+    background-color: pink;
+
+}
+
+
+h1 {
+    font-family: 'alex brush';
+    color: red;
+}
+
+p {
+    font-family: 'kaushan';
+    color: red;
+}
+
+/* 
+h1+p {
+    color: green;
+}
+
+h1~p {
+     background-color: aliceblue; 
+} 
+*/
+
+/* h1 {
+    text-indent: -1000px;
+}
+
+
+p {
+    text-indent: 40px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    color: #ffffff;
+    text-shadow: -1px -1px 4px #008000;
+}
+
+h1:hover {
+    color: #008000;
+    text-shadow: -1px -1px 4px #ffffff;
+}
+
+
+
+
+p:first-line {
+    color: purple
+}
+
+p:first-letter {
+    font-size: 2em;
+    color: green;
+}
+
+
+
+a:link {
+    color: lightgreen;
+}
+
+a:visited {
+    color: green
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+
+input {
+    background-color: antiquewhite;
+}
+
+input:focus {
+    background-color: burlywood;
+}
+
+input:active {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+/*
+    :first-letter
+    :first-line
+    :link
+    :visited
+    :hover
+    :focus
+    :active
+
+*/
