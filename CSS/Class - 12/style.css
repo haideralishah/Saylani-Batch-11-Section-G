@@ -1,0 +1,36 @@
+.para-2 {
+    width: 50%;
+    position: relative;
+    top: 50px;
+    /* left: 50%; */
+    left: 200px;
+    border: 1px solid red;
+   
+}
+
+h2{
+    background-color: pink;
+    position: absolute;
+    top:70px;
+    left: 180px;
+    z-index: -5;
+}
+
+h3{
+    /* background-color: red;
+     position: fixed; */
+    /*top: 200px;
+    left: 100px; */
+    /* z-index: -5; */
+}
+
+p{
+    background-color: #f0f8ff
+}
+
+
+a{
+    position: sticky;
+    top: 50px;
+    /* left:70px; */
+}
