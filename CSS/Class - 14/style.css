@@ -1,0 +1,64 @@
+/* .large{
+    width: 280px;
+    height: 400px;    
+}
+
+img{
+    float: right;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.bg-img {
+    /* background-image: url("images/rose\ bg1.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background-size: cover; */
+
+    /* background-position: center center; */
+    /* background-color: #f3d4d1; */
+
+
+
+    /* background: #f3d4d1 url("images/rosebg1.avif") fixed center center no-repeat; */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 64px;
+    height: 100px;
+    background: #ffffff url("images/header.gif") repeat;
+}
+
+/* .bg-img{
+    background: #ffffff url('images/tulip.gif') no-repeat scroll top right;
+    
+} */
+
+
+
+.bg-img {
+    font-size: 32px;
+    color: #ffffff;
+    background: #000000 url(images/pattern.gif);
+}
