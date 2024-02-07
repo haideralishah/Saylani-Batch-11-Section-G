@@ -1,0 +1,71 @@
+/* h1 {
+    background-color: darkorchid;
+    transition: background-color 4s, padding-left 4s, transform 4s, color 4s;
+    transition-timing-function: ease-out;
+}
+
+
+h1:hover {
+    background-color: green;
+    color: red;
+    transform: rotate(180deg);
+    padding-left: 30%;
+} */
+
+
+
+@keyframes heading {
+    0% {
+        padding-left: 0;
+        background-color: aqua;
+        color: black;
+    }
+
+    25% {
+        padding-left: 20%;
+        background-color: antiquewhite;
+        color: red;
+    }
+
+    50% {
+        padding-left: 40%;
+        background-color: rgb(215, 250, 215);
+        color: rgb(81, 0, 255);
+    }
+
+    75% {
+        padding-left: 60%;
+        background-color: rgb(250, 215, 243);
+        color: rgb(159, 11, 132);
+    }
+
+    100% {
+        padding-left: 80%;
+        background-color: rgb(250, 243, 215);
+        color: rgb(12, 106, 137);
+    }
+
+
+    /* from {
+        padding-left: 0;
+        background-color: aqua;
+        color: black;
+
+    }
+
+    to {
+        padding-left: 30%;
+        background-color: antiquewhite;
+        color: red;
+    } */
+}
+
+h1 {
+    font-size: 20px;
+    background-color: aqua;
+    animation-name: heading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: ease-in-out; */
+}
