@@ -1,0 +1,12 @@
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 100px;
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+        background-color: green;
+    }
+}

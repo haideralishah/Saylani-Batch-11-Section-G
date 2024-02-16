@@ -1,0 +1,16 @@
+git config --global user.name <user name>
+git config --global user.email <email address>
+
+
+git init
+
+
+
+git status
+To stage:
+git add <file name>
+To Commit:
+git commit -m "<message>"
+
+
+git log
