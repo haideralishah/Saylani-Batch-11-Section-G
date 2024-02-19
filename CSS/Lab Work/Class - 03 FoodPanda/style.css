@@ -1,0 +1,193 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* border: 2px solid red; */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #ffffff;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar img {
+    height: 40px;
+}
+
+.user-icon {
+    display: none;
+}
+
+.location-btn,
+.auth-container {
+    width: 33%;
+}
+
+.loc-btn2 {
+    display: none;
+}
+
+.auth-container {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.location-btn {
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.location-btn img {
+    width: 20px;
+    height: 25px;
+}
+
+.location-btn:hover {
+    background-color: rgba(248, 199, 220, 0.4);
+}
+
+.login,
+.signup {
+    width: 70px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+.login {
+    background-color: #ffffff;
+    color: #ff2b85;
+    border: 1px solid #ff2b85;
+}
+
+
+.signup {
+    background-color: #ff2b85;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.auth-container img {
+    /* width: 20px; */
+    height: 25px;
+}
+
+
+
+
+
+.user-icon {
+    height: 28px !important;
+}
+
+.panda-hero {
+    z-index: -100;
+    padding: 5%;
+    padding-right: 0;
+    background-color: #f7f7f7;
+    position: relative;
+    top: -17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panda-hero p {
+    font-size: 3em;
+}
+
+.panda-hero img {
+    width: 50%;
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .location-btn,
+    .lang-icon,
+    .login,
+    .signup {
+        display: none;
+    }
+
+    .user-icon,
+    .loc-btn2 {
+        display: block;
+    }
+
+    .nav-bar {
+
+        justify-content: space-around;
+    }
+
+    .auth-container {
+
+        width: 10%;
+    }
+
+    .header {
+        height: 120px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .loc-btn2 {
+        width: 100%;
+    }
+
+
+    .loc-btn2 {
+        border: none;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        font-size: 1.2em;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.2s;
+        /* margin: 0 auto;
+        width: 50%; */
+    }
+
+    .loc-btn2 img {
+        width: 20px;
+        height: 25px;
+    }
+
+    .panda-hero p {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
