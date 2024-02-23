@@ -14,3 +14,19 @@ git commit -m "<message>"
 
 
 git log
+
+
+
+git branch
+git branch <new branch name>
+git checkout <branch name>
+
+
+
+To merge checkout to parent branch
+git merge <branch name>
+
+
+git remote add origin <repo URL>
+git push -u origin <branch name>
+
