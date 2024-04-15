@@ -208,7 +208,6 @@ question 14
 
 
 // let arr = [1, 5, 7, 3, 7, 1, 6, 7, 1, 65, 100, 75, 1571, 30];
-
 // let largestNumber = 1;
 
 // for (let i = 0; i < arr.length; i++) {
@@ -236,7 +235,7 @@ question 14
 
 
 
-let arr = [100, 7, 3, 7, 6, 7, 65, 100, 75, 1571, 30];
+let arr = [5, 7, 3, 7, 6, 7, 65, 100, 75, 1571, 30];
 
 let smallestNum = arr[0];
 
