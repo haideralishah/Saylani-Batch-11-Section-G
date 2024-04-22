@@ -161,11 +161,9 @@
 
 
 
-let random = Math.ceil(Math.random() * 8);
+// let random = Math.ceil(Math.random() * 8);
 
-console.log(random);
-
-
+// console.log(random);
 
 
 
@@ -178,6 +176,138 @@ console.log(random);
 
 
 
+
+
+
+
+
+
+
+// let ranNum = Math.ceil(Math.random() * 3);
+// console.log(ranNum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let age = "26.4489";
+// console.log(age);
+
+// age = parseInt(age);
+// age = parseFloat(age);
+
+// console.log(age);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let age = "26.4489";
+
+// age = Number(age);
+
+// console.log(age);
+
+
+
+
+
+
+
+
+// let age = "apple";
+
+// age = Number(age);
+
+// console.log(age);
+
+// console.log(isNaN(age));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let num = 57648;
+
+// num = num.toString();
+
+// console.log(num.split(""));
+
+
+
+
+
+
+
+
+
+
+
+
+// let num = 2548633110;
+//  254863-3-1-10
+//question 12556334779
+//         125-563-347-7-9
+
+
+
+
+
+
+
+
+let bill = 2.567167;
+bill = bill.toFixed(2);
+console.log(bill);
 
 
 
