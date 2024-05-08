@@ -265,50 +265,294 @@
 
 
 
-function calculateGrade(marks) {
-    let grade;
-    if (marks >= 80) {
-        grade = "A-1";
-    }
-    else if (marks < 80 && marks >= 70) {
-        grade = "A";
-    }
-    else if (marks < 70 && marks >= 60) {
-        grade = "B";
-    }
-    else if (marks < 60 && marks >= 50) {
-        grade = "C";
-    }
-    else if (marks < 50 && marks >= 40) {
-        grade = "D";
-    }
-    else if (marks < 40 && marks >= 33) {
-        grade = "E";
-    }
-    else {
-        grade = "F";
-    }
-    return grade;
-}
+// function calculateGrade(marks) {
+//     let grade;
+//     if (marks >= 80) {
+//         grade = "A-1";
+//     }
+//     else if (marks < 80 && marks >= 70) {
+//         grade = "A";
+//     }
+//     else if (marks < 70 && marks >= 60) {
+//         grade = "B";
+//     }
+//     else if (marks < 60 && marks >= 50) {
+//         grade = "C";
+//     }
+//     else if (marks < 50 && marks >= 40) {
+//         grade = "D";
+//     }
+//     else if (marks < 40 && marks >= 33) {
+//         grade = "E";
+//     }
+//     else {
+//         grade = "F";
+//     }
+//     return grade;
+// }
 
 
 
 
 
 
-let students = ['ahmed', "abdullah", "muzammil"];
-let marks = [65, 75, 45];
-let tBody = document.querySelectorAll('tbody');
+// let students = ['ahmed', "abdullah", "muzammil"];
+// let marks = [65, 75, 45];
+// let tBody = document.querySelectorAll('tbody');
 
-for (let i = 0; i < students.length; i++) {
-    let grade = calculateGrade(marks[i]);
+// for (let i = 0; i < students.length; i++) {
+//     let grade = calculateGrade(marks[i]);
 
-    tBody[0].innerHTML += `
-        <tr>
-            <td>${students[i]}</td>
-            <td>${marks[i]}</td>
-            <td>${grade}</td>
-        </tr>      
-    `
-}
+//     tBody[0].innerHTML += `
+//         <tr>
+//             <td>${students[i]}</td>
+//             <td>${marks[i]}</td>
+//             <td>${grade}</td>
+//         </tr>
+//     `
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// function greet(userName) {
+//     return `Assalamualaikum ${userName}`;
+// }
+
+// let msg = greet("Abdullah");
+
+// document.write(`${greet("Abdullah")}. How may I help you?`);
+
+
+
+
+
+
+
+
+
+
+
+
+// function makeCube(num) {
+//     let cube = num * num * num; // 27
+//     return cube;
+// }
+
+// console.log(makeCube(3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var user1 = "haider";
+// var user2 = 'abdullah';
+
+// function replaceName() {
+//     user1 = 'muzammil';
+//     // user2 = 'ahmed';
+//     // var user3 = 'Nasir';
+
+//     console.log(user1, user2, user3); // muzammil ahmed
+// }
+
+// console.log(user1, user2); // haider abdullah
+// replaceName();
+// console.log(user1, user2); // haider ahmed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let user = 'Akram';
+
+// function replaceName() {
+//     // let user;
+//     if (true) {
+//         let user = 'Aslam';
+//     }
+//     console.log(user);
+// }
+
+// replaceName();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let theSum;
+// console.log(theSum);
+
+// function addNumbers() {
+//     theSum = 2 + 2;
+// }
+
+// addNumbers();
+
+// console.log(theSum, anotherSum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const greet = 'Assalamualaikum! How may I help you?';
+
+// const url = "https://www.google.com";
+
+// const userName = "haider";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
