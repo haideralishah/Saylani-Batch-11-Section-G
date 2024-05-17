@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <button onclick="displayMsg()">Click Me</button>
+  <a href="JavaScript: void(0)" onclick="divertUser('https://www.google.com')">Go to Google</a>
+  <br />
+  <!-- <img onmouseover="replaceImage(this)" onmouseout="revertOriginalImage(this)"
+    src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/08/13/7d11889aea6d9c2c770a7db462cbf310_original.jpg?impolicy=abp_cdn&imwidth=720"
+    alt="shoaib akhtar" /> -->
+
+  <label>
+    City:<input type="text" name="city-name" class="city-name" onblur="autoFillProvince()" onfocus="displayHelp()" />
+  </label><br />
+  <label>
+    Province:<input type="text" name="province-name" class="province-name" />
+  </label>
+
+  <p class="dummy-para"></p>
+  <p onmouseover="changeColor(this)">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam,
+    quos
+    eos quas quis dolores
+    doloribus nesciunt facilis reprehenderit magnam ducimus maiores excepturi repellendus optio, ipsa possimus ratione
+    dolorum aperiam?</p>
+  <script src="app.js"></script>
+</body>
+
+</html>
