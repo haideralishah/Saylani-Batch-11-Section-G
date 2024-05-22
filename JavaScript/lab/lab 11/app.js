@@ -1,13 +1,13 @@
-let todoInput = document.querySelectorAll('.todo-input');
+let todoInput = document.querySelectorAll('.todo-input')[0];
 let todoListDiv = document.querySelectorAll('.todo-list');
 
 let allTodos = [];
 
 function add() {
-    let newTodo = todoInput[0].value;
+    let newTodo = todoInput.value;
     allTodos.push(newTodo);
     printAllTodos();
-    todoInput[0].value = "";
+    todoInput.value = "";
 }
 
 function printAllTodos() {
@@ -28,6 +28,46 @@ function deleteTodo(index) {
     printAllTodos();
 }
 
+
+
+let addTodoDiv = document.querySelectorAll("#add-todo-container")[0];
+let editTodoDiv = document.querySelectorAll("#edit-todo-container")[0];
+let editInput = document.querySelectorAll(".edit-todo-input")[0];
+let editIndex;
 function editTodo(index) {
-    console.log('editTodo func called', index);
+    if (isEditing) {
+        displayError();
+    }
+    else {
+        toggleTodoInput();
+        editInput.value = allTodos[index];
+        editIndex = index;
+    }
+}
+
+function updateTodo() {
+    toggleTodoInput();
+    allTodos.splice(editIndex, 1, editInput.value);
+    printAllTodos();
+}
+
+let isEditing = false;
+function toggleTodoInput() {
+    if (isEditing) {
+        addTodoDiv.className = "";
+        editTodoDiv.className += " hide";
+    }
+    else {
+        addTodoDiv.className += " hide";
+        editTodoDiv.className = "";
+    }
+    isEditing = !isEditing;
+}
+
+let errorEl = document.querySelectorAll(".error-msg")[0];
+function displayError() {
+    errorEl.innerHTML = 'Please save current todo first.';
+    setTimeout(function () {
+        errorEl.innerHTML = "";
+    }, 3000);
 }
