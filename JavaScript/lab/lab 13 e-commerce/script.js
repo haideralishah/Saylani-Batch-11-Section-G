@@ -43,7 +43,8 @@ const products = [
 
 let cart = [
   {
-    image: "https://burgerlab.com.pk/wp-content/uploads/2022/01/doppler.png?c062ef&c062ef",
+    image:
+      "https://burgerlab.com.pk/wp-content/uploads/2022/01/doppler.png?c062ef&c062ef",
     productName: "THE Doppler",
     price: "$10.00",
     qty: 3,
