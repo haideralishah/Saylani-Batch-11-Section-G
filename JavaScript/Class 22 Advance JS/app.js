@@ -509,12 +509,239 @@ userName => `Welcome ${userName}`
 
 
 
-const makeMessage = userName => `Welcome ${userName}`;
+// const makeMessage = userName => `Welcome ${userName}`;
 
-let greet = makeMessage("Abdullah");
+// let greet = makeMessage("Abdullah");
 
-console.log(greet);
-
-
+// console.log(greet);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let obj = {
+//     num: 5,
+//     calculateSquare: function () {
+//         console.log(this.num * this.num);
+//         console.log(this);
+//     }
+// }
+
+
+
+// let obj = {
+//     num: 5,
+//     calculateSquare: () => {
+//         console.log(this.num * this.num);
+//         console.log(this);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let obj = {
+//     num: 5,
+//     calculateSquare: function () {
+//         console.log(this.num * this.num);
+//         console.log(this);
+//         const anotherFun = () => {
+//             console.log(this);
+//         }
+//         anotherFun();
+//     }
+// }
+
+// obj.calculateSquare();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let allNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// allNum.forEach((num, i) => {
+//     if (i % 2 !== 0) return;
+
+//     console.log(num * num);
+// });
+
+
+
+// let fruits = ["Apple", "Banana", "Orange", "Cherry", "Grapes", "Watermelon"];
+
+// fruits.forEach((fruit, i) => {
+
+//     console.log(fruit.toUpperCase(), i);
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let allNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let squareArr = allNum.map(num => num * num);
+
+// console.log(squareArr)
+
+
+
+
+
+
+
+
+
+
+// let fNames = ["haider", "abdullah", "aslam", "akram", "sameed", "anas", "ahmed", "shoaib"];
+
+// fNames = fNames.map((fName) => {
+//     return fName.toUpperCase()
+// });
+
+// fNames = fNames.map(fName => fName.toUpperCase());
+
+// console.log(fNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let fNames = ["haider", "abdullah", "aslam", "akram", "sameed", "anas", "ahmed", "shoaib"];
+
+// fNames = fNames.map(fName => {
+//     let firstChr = fName[0].toUpperCase();
+//     let restChr = fName.slice(1).toLowerCase();
+//     return `${firstChr}${restChr}`;
+// });
+
+// console.log(fNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let allNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let evenNums = allNum.filter((num) => num % 2 === 0);
+
+// console.log(evenNums);
+
+
+
+
+
+
+
+
+
+
+
+
+
+let students = ["haider", "abdullah", "aslam", "akram", "sameed", "anas", "ahmed", "shoaib", "akram", "hassan", 'rashid', "umair"];
+
+let feesClear = ["haider", "abdullah", "aslam", "anas", "ahmed", "shoaib", "umair"];
+
+let examClear = ["abdullah", "aslam", "akram", "ahmed", "shoaib", "akram", "hassan", 'rashid'];
+
+let eligible = students.filter((student) => (
+    feesClear.includes(student) &&
+    examClear.includes(student)
+))
+
+console.log(eligible);
