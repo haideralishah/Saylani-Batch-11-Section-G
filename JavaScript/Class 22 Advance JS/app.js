@@ -733,15 +733,347 @@ userName => `Welcome ${userName}`
 
 
 
-let students = ["haider", "abdullah", "aslam", "akram", "sameed", "anas", "ahmed", "shoaib", "akram", "hassan", 'rashid', "umair"];
+// let students = ["haider", "abdullah", "aslam", "akram", "sameed", "anas", "ahmed", "shoaib", "akram", "hassan", 'rashid', "umair"];
 
-let feesClear = ["haider", "abdullah", "aslam", "anas", "ahmed", "shoaib", "umair"];
+// let feesClear = ["haider", "abdullah", "aslam", "anas", "ahmed", "shoaib", "umair"];
 
-let examClear = ["abdullah", "aslam", "akram", "ahmed", "shoaib", "akram", "hassan", 'rashid'];
+// let examClear = ["abdullah", "aslam", "akram", "ahmed", "shoaib", "akram", "hassan", 'rashid'];
 
-let eligible = students.filter((student) => (
-    feesClear.includes(student) &&
-    examClear.includes(student)
-))
+// let eligible = students.filter((student) => (
+//     feesClear.includes(student) &&
+//     examClear.includes(student)
+// ))
 
-console.log(eligible);
+// console.log(eligible);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+array.forEach((item, index)=>);
+
+array.map((item, index)=>{});
+
+array.filter((item, index)=>{})
+
+array.reduce((accomVal, item, index)=>, initVal)
+
+array.every((item, index)=>)
+
+array.some((item, index)=>)
+
+*/
+
+
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15];
+
+// let sum = num.reduce((init, item) => init + item, 0);
+
+// console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let str = "hello world";
+
+// let reverseStr = str.split("").reverse().join("");
+
+// let revStr = str.split("")
+//     .reduce((reverse, chr) => chr + reverse, "");
+
+// console.log(revStr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let str = 'the quick brown fox jumps over the lazy dog.';
+// let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// let count = str.split("")
+//     .reduce((vowCount, chr) => (
+//         vowels.includes(chr) ? vowCount + 1 : vowCount
+//     ), 0);
+
+// console.log(count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let str1 = "Saylani Mass Information Technology"; //SMIT
+// let str2 = "Pakistan Telecommunication Company Limited"; // PTCL
+// let str3 = "National Aeronautics Space Administration"; //NASA
+
+// let abbr1 = str1.split(" ").reduce(findAbbr, "");
+
+// let abbr2 = str2.split(" ").reduce(findAbbr, "");
+
+// let abbr3 = str3.split(" ").reduce(findAbbr, "");
+
+// function findAbbr(firstChrs, words) {
+//     return firstChrs + words[0];
+// }
+
+// console.log(abbr1, abbr2, abbr3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let teamAges = [15, 18, 20, 22, 19];
+
+// let eligible = true;
+
+// for (let i = 0; i < teamAges.length; i++) {
+//     if (teamAges[i] < 15) {
+//         eligible = false;
+//         break;
+//     }
+// }
+// console.log(eligible);
+
+
+
+
+
+// let teamAges = [15, 18, 20, 31, 22, 24];
+
+// let eligibleForAdmission = teamAges.every((age) => age >= 15);
+
+// let eligibleForGym = teamAges.some((age) => age >= 30);
+
+// console.log(eligibleForAdmission);
+// console.log(eligibleForGym);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let users = [
+    { email: "headeralishah@gmail.com", password: "12345678" },
+    { email: "abdullah@gmail.com", password: "12345678" },
+    { email: "muzammil@gmail.com", password: "12345678" },
+]
+
+function authenticate(userEmail, userPassword) {
+    return new Promise((resolve, reject) => {
+        let isAuth = users.some(({ email, password }) => {
+            return email === userEmail && password === userPassword
+        });
+        if (isAuth) {
+            resolve("Successfully login");
+        }
+        else {
+            reject('Incorrect email or password');
+        }
+    });
+}
+
+authenticate("headeralishah@gmail.com", "12345678")
+    .then((success) => {
+        console.log(success);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
