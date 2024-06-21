@@ -1050,30 +1050,196 @@ array.some((item, index)=>)
 
 
 
-let users = [
-    { email: "headeralishah@gmail.com", password: "12345678" },
-    { email: "abdullah@gmail.com", password: "12345678" },
-    { email: "muzammil@gmail.com", password: "12345678" },
-]
+// let users = [
+//     { email: "headeralishah@gmail.com", password: "12345678" },
+//     { email: "abdullah@gmail.com", password: "12345678" },
+//     { email: "muzammil@gmail.com", password: "12345678" },
+// ]
 
-function authenticate(userEmail, userPassword) {
+// function authenticate(userEmail, userPassword) {
+//     return new Promise((resolve, reject) => {
+//         let isAuth = users.some(({ email, password }) => {
+//             return email === userEmail && password === userPassword
+//         });
+//         if (isAuth) {
+//             resolve("Successfully login");
+//         }
+//         else {
+//             reject('Incorrect email or password');
+//         }
+//     });
+// }
+
+// authenticate("headeralishah@gmail.com", "12345678")
+//     .then((success) => {
+//         console.log(success);
+//     })
+//     .catch((error) => {
+//         console.error(error);
+//     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// try {
+//     aler('Hello World');
+// }
+// catch (e) {
+//     console.error(e);
+//     document.write(e);
+// }
+
+// console.log("Hello Mars");
+
+
+// function returnNum() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(() => resolve(1), 1000);
+//     })
+// }
+// returnNum()
+//     .then((result) => {
+//         alert(result);
+//         return result * 2;
+//     })
+//     .then(function (result) {
+//         alert(result);
+//         return result * 2;
+//     })
+
+//     .catch((e) => {
+//         console.error(e)
+//     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("foo");
+//     }, 3000)
+// });
+
+// Promise.all([promise2, promise3, promise1])
+//     .then((success) => {
+//         console.log(success);
+//     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const promise4 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("a promise4");
+//     }, 3000)
+// });
+
+// const promise5 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("b promise5");
+//     }, 5000)
+// });
+
+// Promise.race([promise4, promise5])
+//     .then((success) => {
+//         console.log(success);
+//     })
+
+
+
+
+
+
+
+
+
+
+
+
+function fetchUser1() {
     return new Promise((resolve, reject) => {
-        let isAuth = users.some(({ email, password }) => {
-            return email === userEmail && password === userPassword
-        });
-        if (isAuth) {
-            resolve("Successfully login");
-        }
-        else {
-            reject('Incorrect email or password');
-        }
+        setTimeout(() => {
+            resolve({ userName: 'haider', email: 'header@gmail.com' })
+        }, 3000)
     });
 }
 
-authenticate("headeralishah@gmail.com", "12345678")
-    .then((success) => {
-        console.log(success);
-    })
-    .catch((error) => {
-        console.error(error);
-    })
+async function getUser() {
+    let user = await fetchUser1();
+    console.log('next line', user);
+}
+getUser();
+
+
+
+
+
+/*
+try{}catch(){}
+Promise.all()
+Promise chaining
+Promise.race()
+async await
+JSON.stringify()
+JSON.parse()
+
+
+
+self study
+localstorage
+await fetch()
+*/
