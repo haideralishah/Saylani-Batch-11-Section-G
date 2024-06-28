@@ -1,0 +1,17 @@
+{
+  "name": "helloworld-typescript",
+  "version": "0.0.1",
+  "description": "We are learning typescript.",
+  "scripts": {
+    "start": "npx tsc --watch",
+    "build": "npx tsc",
+    "watch": "npx tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haideralishah/Saylani-Batch-11-Section-G.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
