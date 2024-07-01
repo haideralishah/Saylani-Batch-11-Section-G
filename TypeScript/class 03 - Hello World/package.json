@@ -1,0 +1,11 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx tsc --watch",
+    "build": "npx tsc"
+  },  
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
