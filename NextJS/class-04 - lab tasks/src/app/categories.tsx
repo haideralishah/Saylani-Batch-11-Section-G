@@ -1,6 +1,11 @@
 "use client"
 
-export default function Categories() {
+type CategoryType = {
+    categories: string[]
+}
+
+export default function Categories({ categories }: CategoryType) {
+
 
     const selectCategory = (categoryName: string) => {
         console.log(categoryName);
@@ -8,10 +13,14 @@ export default function Categories() {
 
     return (
         <>
-            <button onClick={() => { selectCategory("Cars") }}>Cars</button>
-            <button onClick={() => { selectCategory("Gadgets") }}>Gadgets</button>
-            <button onClick={() => { selectCategory("Mobiles") }}>Mobiles</button>
-            <button onClick={() => { selectCategory("Cloths") }}>Cloths</button>
+            {
+                categories.map((category, i) => (
+                    <button key={category + i} onClick={() => { selectCategory(category) }}>
+                        {category}
+                    </button>
+                ))
+            }
+
         </>
     )
 }
