@@ -15,7 +15,10 @@ export default function Categories({ categories }: CategoryType) {
         <>
             {
                 categories.map((category, i) => (
-                    <button key={category + i} onClick={() => { selectCategory(category) }}>
+                    <button 
+                        key={category + i} 
+                        onClick={() => { selectCategory(category) }}
+                    >
                         {category}
                     </button>
                 ))

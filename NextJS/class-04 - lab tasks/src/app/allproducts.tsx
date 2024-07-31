@@ -1,7 +1,11 @@
 import Product from "./product";
+import { ProductItemType } from "./product-type";
 
+type ProductListType = {
+    productList: ProductItemType[];
+}
 
-export default function AllProducts() {
+export default function AllProducts({ productList }: ProductListType) {
 
     return (
 
@@ -23,11 +27,40 @@ export default function AllProducts() {
                 </tr>
             </thead>
             <tbody>
-                <Product />
-                <Product />
-                <Product />
+
+
+                {
+                    productList.map(({ 
+                        id, name, price, category 
+                    }) => (
+                        <Product 
+                            key={id + name}
+                            id={id}
+                            name={name}
+                            price={price}
+                            category={category}
+                        />
+                    ))
+                }
+
+
+
+
+               
             </tbody>
         </table>
 
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+

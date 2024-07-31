@@ -7,13 +7,28 @@ category
 
 */
 
-export default function Product() {
+import { ProductItemType } from "./product-type";
+
+export default function Product({ 
+    id, 
+    name, 
+    price, 
+    category 
+}: ProductItemType) {
     return (
         <tr>
-            <td style={{ border: '1px solid black', padding: "10px" }}>1</td>
-            <td style={{ border: '1px solid black', padding: "10px" }}>IPhone 15 pro max</td>
-            <td style={{ border: '1px solid black', padding: "10px" }}>2500</td>
-            <td style={{ border: '1px solid black', padding: "10px" }}>Mobile Phones</td>
+            <td style={{ border: '1px solid black', padding: "10px" }}>
+                {id}
+            </td>
+            <td style={{ border: '1px solid black', padding: "10px" }}>
+                {name}
+            </td>
+            <td style={{ border: '1px solid black', padding: "10px" }}>
+                {price}
+            </td>
+            <td style={{ border: '1px solid black', padding: "10px" }}>
+                {category}
+            </td>
         </tr>
     )
 }
