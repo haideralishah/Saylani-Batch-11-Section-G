@@ -32,10 +32,10 @@ export default function AllProducts({ productList }: ProductListType) {
                 {
                     productList.map(({ 
                         id, name, price, category 
-                    }) => (
+                    }, index) => (
                         <Product 
                             key={id + name}
-                            id={id}
+                            id={index + 1}
                             name={name}
                             price={price}
                             category={category}

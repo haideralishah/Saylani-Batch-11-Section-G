@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AllProducts from "./allproducts";
 import Categories from "./categories";
 import MyInfo from "./myinfo";
@@ -36,7 +36,13 @@ const products: ProductItemType[] = [
     name: 'Macbook',
     price: 2500,
     category: "Computers"
-  }
+  },
+  {
+    id: 6,
+    name: 'Mehran',
+    price: 2000,
+    category: "Cars"
+  },
 ];
 
 export default function Home() {
@@ -44,13 +50,30 @@ export default function Home() {
     "All", "Phones", "Gadgets", "Cloths", "Cars", "Computers"
   ]);
   const [filteredProducts, setFilteredProducts] = useState(products);
+  const [selectedCat, setSelectedCat] = useState("All");
+
+  useEffect(() => {
+    console.log('Hello World');
+  }, []);
+
+  useEffect(() => {
+
+    let shrtListedPrd = products.filter(({ category }) => (
+      selectedCat === "All" || category === selectedCat
+    ));
+    setFilteredProducts(shrtListedPrd);
+
+
+  }, [selectedCat]);
 
 
   return (
     <>
       <MyInfo />
+      <button>Sort By Price</button>
       <Categories
         categories={categList}
+        setSelectedCat={setSelectedCat}
       />
       <AllProducts
         productList={filteredProducts}
